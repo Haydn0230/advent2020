@@ -23,9 +23,11 @@ func main () {
 	var answer int
 	for _, firstValue := range result {
 		for _, secondValue := range result {
-			sum := firstValue + secondValue
-			if sum == target {
-				answer = firstValue * secondValue
+			for _, thirdValue := range result {
+				sum := firstValue + secondValue + thirdValue
+				if sum == target {
+					answer = firstValue * secondValue * thirdValue
+				}
 			}
 		}
 	}
