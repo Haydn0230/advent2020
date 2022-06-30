@@ -12,7 +12,7 @@ import (
 
 const target = 2020
 
-func main () {
+func main() {
 	dataBytes, err := ioutil.ReadFile("data.txt")
 	if err != nil {
 		panic(err)
